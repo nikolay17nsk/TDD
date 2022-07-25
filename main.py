@@ -28,7 +28,7 @@ try:
             else:
                 
                 dadata = Dadata(token, secret)
-                result = dadata.suggest(name="address", query=value, language=lan)
+                result = dadata.suggest(name="address", query=value, language=lan, count=20)
                 x = 0
 
                 for i in result:
